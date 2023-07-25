@@ -1,0 +1,95 @@
+
+body::before {
+    content: '';
+    position: fixed; /* Фиксируем на одном месте */
+    left: -4px; right: -4px;
+    top: -4px; bottom: -4px;
+    z-index: -1;
+    background-image: url("./img/lobby.jpg");
+    filter: blur(4px);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+body {
+    scroll-behavior: unset;
+}
+#root {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+    top: 0;
+    position: absolute;
+    color: white;
+}
+.field {
+    position: relative;
+    height: 4vh;
+    width: 18vw;
+    border: none;
+    left: 0;
+    bottom: 0;
+    flex-grow: 1;
+    border-radius: 1vh;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    padding-left: 0.5vw;
+}
+.field:focus {
+    outline: none;
+}
+.abtn {
+    margin-top: 5vh;
+    margin-left: 3vw;
+    height: 5vh;
+    width: 5vw;
+    background: forestgreen;
+    border-radius: 0.8vw;
+    outline: none;
+    color: white;
+    right: 0;
+    bottom: 0;
+    font-size: 90%;
+    border: 2px solid #1CA92E;
+}
+.abtn:hover {
+    background: #228000;
+}
+.radio-toolbar {
+    margin-top: 5vh;
+    margin-left: 3vw;
+}
+.formm{
+    height: 60vh;
+    width: 25vw;
+    position: absolute;
+    margin-left: 37vw;
+    margin-top: 20vh;
+    background-color: rgba(107,142,35, 0.5);
+    top: 0;
+    left: 0;
+    border-radius: 1.5vw;
+}
+.radio-toolbar input[type="radio"] {
+    display: none;
+}
+
+.radio-toolbar label {
+    border-radius: 1vw;
+    margin-right: 3vw;
+    display: inline-block;
+    font-size: 90%;
+    padding: 1.3vh 1.6vh;
+    cursor: pointer;
+    border: 2px solid yellowgreen;
+    background-color: rgba(107,142,35, 0.5)
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+    background-color: forestgreen;
+    border: 2px solid #1CA92E;
+}
+
+.radio-toolbar label:hover {
+    background-color: #228000;
+    border: 2px solid #1CA92E;
+}

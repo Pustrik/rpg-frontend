@@ -1,0 +1,148 @@
+.chat {
+    height: 93%;
+    width: 25%;
+    border: 3px solid #333333;
+    right: 2%;
+    background-color: rgba(34, 128, 0, 0.5);
+    padding-left: 1%;
+    padding-bottom: 1%;
+    position: absolute;
+    display: inline-block;
+}
+.chat input {
+    position: relative;
+    height: 4vh;
+    width: 18vw;
+    border: none;
+    left: 0;
+    bottom: 0;
+    border-radius: 1vh;
+    padding-left: 0.5vw;
+    margin-bottom: 5vh;
+}
+.chatbtn {
+    height: 4vh;
+    width: 5vw;
+    background: forestgreen;
+    border-radius: 0.8vw;
+    outline: none;
+    color: white;
+    margin-left: .5vw;
+    right: 0;
+    bottom: 0;
+    font-size: 90%;
+    border: 2px solid #1CA92E;
+}
+.chatbtn:hover {
+    background: #228000;
+}
+.main {
+    color: #333333;
+    font-size: 1.3vw;
+    -webkit-text-stroke: .1vw #229900;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+}
+#players {
+    width: 15%;
+    height: 98%;
+    position: absolute;
+    margin-left: 55%;
+    padding-top: 1%;
+    font-size: 1.2vw;
+    color: darkslategrey;
+}
+#players button {
+    height: 3vh;
+    width: 4vw;
+    background: forestgreen;
+    border-radius: 0.8vw;
+    outline: none;
+    color: black;
+    right: 0;
+    bottom: 0;
+    font-size: 90%;
+    border: 2px solid #1CA92E;
+}
+
+#players button:hover {
+    background: darkred;
+}
+#root {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.message {
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    bottom: 0;
+}
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+#inf {
+    padding-left: 10%;
+    height: 10%;
+}
+#warrior {
+    background-image: url("./img/warrior2.png");
+    height: 69vh;
+    width: 20vw;
+    background-repeat: no-repeat;
+    margin-left: 40%;
+    background-size: cover;
+
+}
+#mage {
+    background-image: url("./img/mage.png");
+    height: 65vh;
+    width: 20vw;
+    background-repeat: no-repeat;
+    margin-left: 40%;
+    background-size: cover;
+
+}
+#thief {
+    background-image: url("./img/thief.png");
+    height: 65vh;
+    width: 30vw;
+    background-repeat: no-repeat;
+    margin-left: 30%;
+    background-size: cover;
+}
+
+.lobbtn  {
+    margin-top: 5vh;
+    margin-left: 3vw;
+    height: 7vh;
+    width: 9vw;
+    background: forestgreen;
+    border-radius: 0.8vw;
+    outline: none;
+    color: black;
+    right: 0;
+    bottom: 0;
+    font-size: 100%;
+    -webkit-text-stroke: .1vw black;
+}
+.lobbtn:hover {
+    background: #228000;
+}
+.chat li {
+    font-size: 1.3vw;
+    margin-top: 2vh;
+
+}

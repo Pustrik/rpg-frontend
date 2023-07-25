@@ -1,0 +1,80 @@
+
+body::before {
+    content: '';
+    position: fixed;
+    left: -4px; right: -4px;
+    top: -4px; bottom: -4px;
+    z-index: -1;
+    filter: blur(4px);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+body {
+    scroll-behavior: unset;
+}
+#root {
+    width: 100%;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    top: 0;
+    color: white;
+}
+#warrior {
+    background-image: url("./img/warrior2.png");
+    height: 80vh;
+    width: 30vw;
+    background-repeat: no-repeat;
+}
+#mage {
+    background-image: url("./img/mage.png");
+    height: 80vh;
+    width: 30vw;
+    background-repeat: no-repeat;
+}
+#thief {
+    background-image: url("./img/thief.png");
+    height: 80vh;
+    width: 30vw;
+    background-repeat: no-repeat;
+}
+#info {
+    padding-left: 10%;
+    color: #333333;
+    font-size: 1.3vw;
+    -webkit-text-stroke: .1vw #228000;
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    display: inline-block;
+    left: 0;
+}
+#menu {
+    font-size: 1.3vw;
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    display: inline-block;
+    right: 0;
+}
+.field:focus {
+    outline: none;
+}
+.btn {
+    margin-top: 10%;
+    position: relative;
+    margin-left: 0;
+    height: 8vh;
+    width: 10vw;
+    background: forestgreen;
+    border-radius: 0.8vw;
+    outline: none;
+    color: white;
+    font-size: 90%;
+    border: 2px solid #1CA92E;
+    float: left;
+    clear: left;
+}
+.btn:hover {
+    background: #228000;
+}
